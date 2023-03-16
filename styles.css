@@ -8,7 +8,7 @@ body {
 
 header {
     background-color: #1F2937;
-    padding: 8px 300px;
+    padding: 0 400px;
 }
 
 nav {
@@ -20,6 +20,7 @@ ul {
     display: flex;
     gap: 20px;
     list-style: none;
+    padding: 0;
 }
 
 a {
@@ -29,6 +30,7 @@ a {
 
 .container-description {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 180px;
     margin: 80px 0;
@@ -45,17 +47,43 @@ a {
 
 .img {
     background-color: grey;
-    flex: 1;
     text-align: center;
-    max-width: 600px;
-    padding: 64px 0;
+    padding: 80px;
 }
 
 .container-info {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
 }
+
+/*
+.container-info h1 {
+    text-align: center;
+}
+*/
 
 .illustrations {
     display: flex;
+    gap: 32px;
 }
+
+.illustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.illustration p {
+    width: 140px;
+    text-align: center;
+}
+
+.frame {
+    border: 2px solid blue;
+    border-radius: 12%;
+    height: 140px;
+    width: 140px;
+}
+
